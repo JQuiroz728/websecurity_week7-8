@@ -38,16 +38,15 @@ Time spent: **4** hours spent in total
 	
 	- Click update and open the permalink
 
-**3. User Authentication**
+**3. Brute Force User Authentication**
   - Summary: 
     - Vulnerability types: User Authentication
     - Tested in version: 4.2
     - Fixed in version: N/A
   - GIF Walkthrough:
-  ![](./userauth.gif)
+  ![](./auth.gif)
   - Steps to recreate:
-	- Type in admin for the username and a wrong password
-	- Type in a random username and password
+	- Upon trying to login, typing in 'admin' for the username with an incorrect password provides information that an 'admin' account does exist, a potential key for hackers.
 
 
 ## Assets
