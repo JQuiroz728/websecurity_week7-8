@@ -17,22 +17,25 @@ Time spent: **4** hours spent in total
 	- Create a new post
 	- Insert the following script tag into the body of the post:
 
-    ```<script>alert('xss')</script>```
+    		```<script>alert('xss')</script>```
 
 	- Publish the post
 	- View the post
 
-**2. Authenticated Stored Cross Site Scripting via Image frame**
+**2. Authenticated Stored Cross Site Scripting via Image Frame**
   - Summary: 
-    - Vulnerability types: Cross Site Scripting
+    - Vulnerability types: Cross Site Scripting (XSS)
     - Tested in version: 4.2
     - Fixed in version: 4.2.1
   - GIF Walkthrough:
   ![](./xss2.gif)
   - Steps to recreate:
-	- Add a new image in media
-	- Click on the new image then edit more details
-	- Add the javascript in the image name in the title section
+	- Add or update an image to media
+	- Click on the image then edit more details
+	- Add the following tag to the image name in the title section:
+	
+		```<IMG SRC=a ONERROR="alert('xss')"/>```
+	
 	- Click update and open the permalink
 
 **3. User Authentication**
