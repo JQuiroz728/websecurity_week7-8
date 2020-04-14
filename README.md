@@ -17,7 +17,7 @@ Time spent: **4** hours spent in total
 	- Create a new post
 	- Insert the following script tag into the body of the post:
 
-    		```<script>alert('xss')</script>```
+    		<script>alert('xss')</script>
 
 	- Publish the post
 	- View the post
